@@ -6,7 +6,7 @@ def patnaik():
     from scipy.io.wavfile import write
     import wavio as wv
     freq = 44100
-    duration = 2
+    duration = 30
     recording = sd.rec(int(duration * freq),
                        samplerate=freq, channels=2)
     sd.wait()
