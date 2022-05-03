@@ -1,0 +1,56 @@
+<html>
+<body>
+<h1 id="myHeader">style="text-align:center;">question</h1>
+ <style>
+        h1{text-align: center;}
+    </style>
+<script>
+    var user = JSON.parse('{{ user | tojson | safe}}');
+     function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+   }
+   async function question() {
+     document.getElementById("myHeader").innerHTML = user.o;
+     await sleep(20000);
+     document.getElementById("myHeader").innerHTML = user.t;
+     await sleep(20000);
+     document.getElementById("myHeader").innerHTML = user.th;
+     await sleep(20000);
+     document.getElementById("myHeader").innerHTML = user.f;
+     await sleep(20000);
+     document.getElementById("myHeader").innerHTML = user.fi;
+     await sleep(20000);
+
+      }
+      async function timer(){
+      await sleep(100000);
+      window.location.href='cs_ev';
+      }
+
+       async function timerr(){
+      await sleep(100000);
+      window.location.href='ec_ev';
+      }
+
+       async function timerrr(){
+      await sleep(100000);
+      window.location.href='me_ev';
+      }
+
+
+      question();
+      if(user.si=='cse'){
+      timer();
+      }
+      else if(user.si=='ece'){
+      timerr();
+      }
+      else if(user.si=='mech'){
+      timerrr();
+      }
+
+
+</script>
+
+</body>
+</html>

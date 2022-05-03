@@ -1,0 +1,74 @@
+<html>
+<body>
+<p1 id="1">style="text-align:center;">question</p1>
+<p1 id="2">style="text-align:center;">question</p1>
+<p1 id="3">style="text-align:center;">question</p1>
+<p1 id="4">style="text-align:center;">question</p1>
+<p1 id="5">style="text-align:center;">question</p1>
+<p1 id="6">style="text-align:center;">question</p1>
+<p1 id="7">style="text-align:center;">question</p1>
+<p1 id="8">style="text-align:center;">question</p1>
+<p1 id="9">style="text-align:center;">question</p1>
+<p1 id="10">style="text-align:center;">question</p1>
+ <style>
+        p1{text-align: center;}
+    </style>
+<script>
+    var user = JSON.parse('{{ user | tojson | safe}}');
+     function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+   }
+   async function question() {
+     document.getElementById("1").innerHTML = user.o;
+     document.getElementById("2").innerHTML = user.t;
+
+     document.getElementById("3").innerHTML = user.th;
+
+     document.getElementById("4").innerHTML = user.f;
+
+     document.getElementById("5").innerHTML = user.fi;
+
+     document.getElementById("6").innerHTML = user.fi;
+
+     document.getElementById("7").innerHTML = user.fi;
+
+     document.getElementById("8").innerHTML = user.fi;
+
+     document.getElementById("9").innerHTML = user.fi;
+
+     document.getElementById("10").innerHTML = user.fi;
+
+
+      }
+      async function timer(){
+      await sleep(26000);
+      window.location.href='cs_ev';
+      }
+
+       async function timerr(){
+      await sleep(26000);
+      window.location.href='ec_ev';
+      }
+
+       async function timerrr(){
+      await sleep(26000);
+      window.location.href='me_ev';
+      }
+
+
+      question();
+      if(user.si=='cse'){
+      timer();
+      }
+      else if(user.si=='ece'){
+      timerr();
+      }
+      else if(user.si=='mech'){
+      timerrr();
+      }
+
+
+</script>
+
+</body>
+</html>

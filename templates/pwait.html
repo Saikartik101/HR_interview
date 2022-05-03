@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLEASE WAIT</title>
+<style>
+a:link, a:visited {
+  background-color: #0000FF;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">We are processing your performance..</h2>
+
+<p style="text-align:center;">this process always take less than 8 minutes</p>
+<script>
+     function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+   }
+     async function timerrr(){
+      await sleep(180000);
+      window.location.href='last';
+      }
+      timerrr();
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: #0000FF;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Let's have a talk</h2>
+
+<p style="text-align:center;">Tell me about yourself</p>
+<script>
+   function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+   }
+   async function timer(){
+      await sleep(10000);
+      window.location.href='up';
+      }
+      timer();
+</script>
+
+</body>
+</html>
