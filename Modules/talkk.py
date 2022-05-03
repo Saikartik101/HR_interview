@@ -1,7 +1,7 @@
 from threading import Thread
 import mj
 def patnaik():
-    mj.stt("before starting the interview introduce yourself within 30 seconds")
+    mj.stt("hello introduce yourself within 30 seconds")
     import sounddevice as sd
     from scipy.io.wavfile import write
     import wavio as wv
