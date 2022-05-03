@@ -5,7 +5,7 @@ def rec():
     from scipy.io.wavfile import write
     import wavio as wv
     freq = 44100
-    duration = 200
+    duration = 102
     recording = sd.rec(int(duration * freq),
                        samplerate=freq, channels=2)
     sd.wait()
